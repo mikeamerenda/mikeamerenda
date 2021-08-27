@@ -1,0 +1,497 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled4.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMHlDyuoVC9hH9MLokKxhSq",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mikeamerenda/mikeamerenda/blob/main/Assignment%3A%20Basic%20Functions%20I\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "czUwP7JjEF4Z",
+        "outputId": "0ea7eb2d-2e93-4b94-f30c-4844fd8f0d3e"
+      },
+      "source": [
+        "#1\n",
+        "def a():\n",
+        "    return 5\n",
+        "print(a())"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "5\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "giW6MCsrEUP4",
+        "outputId": "9c25ff10-ed92-4ad8-dad4-f3b4a76ffd0b"
+      },
+      "source": [
+        "#2\n",
+        "def a():\n",
+        "    return 5\n",
+        "print(a()+a())"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "10\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SDD8cLxlEWjT",
+        "outputId": "87e6c9b5-40c1-488c-99a4-b086f1b45943"
+      },
+      "source": [
+        "#3\n",
+        "def a():\n",
+        "    return 5\n",
+        "    return 10\n",
+        "print(a())"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "5\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qG5LOcqqEf3V",
+        "outputId": "2dbddfee-ac9f-4522-a5d9-7da67574178e"
+      },
+      "source": [
+        "#4\n",
+        "def a():\n",
+        "    return 5\n",
+        "    print(10)\n",
+        "print(a())"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "5\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "J_wPNNGZEjyu",
+        "outputId": "e16417df-ccc2-4599-8b61-c55b7f47b9a2"
+      },
+      "source": [
+        "#5\n",
+        "def a():\n",
+        "    print(5)\n",
+        "x = a()\n",
+        "print(x)"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "5\n",
+            "None\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 229
+        },
+        "id": "c5qocASjEtf0",
+        "outputId": "2ef21193-42be-4975-913f-50f653819808"
+      },
+      "source": [
+        "#6\n",
+        "def a(b,c):\n",
+        "    print(b+c)\n",
+        "print(a(1,2) + a(2,3))"
+      ],
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "3\n",
+            "5\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-17-c5f8fce73963>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0;32mdef\u001b[0m \u001b[0ma\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mb\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mc\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m     \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mb\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mc\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 4\u001b[0;31m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0ma\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0ma\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m3\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: unsupported operand type(s) for +: 'NoneType' and 'NoneType'"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bNkl2OsYE2we",
+        "outputId": "4a9904e7-ecbf-4fe9-dd78-7f775d2780aa"
+      },
+      "source": [
+        "#7\n",
+        "def a(b,c):\n",
+        "    return str(b)+str(c)\n",
+        "print(a(2,5))"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "25\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 128
+        },
+        "id": "4uHE3vsfFTFn",
+        "outputId": "e76be8e5-5d73-4c0a-8be2-87d34ec424a3"
+      },
+      "source": [
+        "#8\n",
+        "def a():\n",
+        "    b = 100\n",
+        "    print(b)\n",
+        "    if b < 10:\n",
+        "        return 5\n",
+        "    else:\n",
+        "        return 10\n",
+        "    return 7\n",
+        "print(a())"
+      ],
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-18-8768de16f635>\"\u001b[0;36m, line \u001b[0;32m7\u001b[0m\n\u001b[0;31m    else:\u001b[0m\n\u001b[0m       ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid character in identifier\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7DSa2C0oGSug",
+        "outputId": "b2184cf2-9855-491c-bf6e-72b242ac7ca4"
+      },
+      "source": [
+        "#9\n",
+        "def a(b,c):\n",
+        "    if b<c:\n",
+        "        return 7\n",
+        "    else:\n",
+        "        return 14\n",
+        "    return 3\n",
+        "print(a(2,3))\n",
+        "print(a(5,3))\n",
+        "print(a(2,3) + a(5,3))"
+      ],
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "7\n",
+            "14\n",
+            "21\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hZPJgX-LGevF",
+        "outputId": "22532f49-29b4-4585-9905-69a06dc98823"
+      },
+      "source": [
+        "#10\n",
+        "def a(b,c):\n",
+        "    return b+c\n",
+        "    return 10\n",
+        "print(a(3,5))"
+      ],
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "8\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9U7Uy2YYGm92",
+        "outputId": "22a57af5-fe25-4573-acc0-420a18600e2c"
+      },
+      "source": [
+        "#11\n",
+        "b = 500\n",
+        "print(b)\n",
+        "def a():\n",
+        "    b = 300\n",
+        "    print(b)\n",
+        "print(b)\n",
+        "a()\n",
+        "print(b)"
+      ],
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "500\n",
+            "500\n",
+            "300\n",
+            "500\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OGis9StaG1gF",
+        "outputId": "c1d9c99a-3c7b-43e3-ed0e-c47405494005"
+      },
+      "source": [
+        "#12\n",
+        "b = 500\n",
+        "print(b)\n",
+        "def a():\n",
+        "    b = 300\n",
+        "    print(b)\n",
+        "    return b\n",
+        "print(b)\n",
+        "a()\n",
+        "print(b)"
+      ],
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "500\n",
+            "500\n",
+            "300\n",
+            "500\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MidpbuNQHANP",
+        "outputId": "4c67640b-43db-4ed8-a07d-e71276638f1b"
+      },
+      "source": [
+        "#13\n",
+        "b = 500\n",
+        "print(b)\n",
+        "def a():\n",
+        "    b = 300\n",
+        "    print(b)\n",
+        "    return b\n",
+        "print(b)\n",
+        "b=a()\n",
+        "print(b)"
+      ],
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "500\n",
+            "500\n",
+            "300\n",
+            "300\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vhXjzJ6dHPkr",
+        "outputId": "43966ea3-f438-473a-8f2b-7363f6e8c319"
+      },
+      "source": [
+        "#14\n",
+        "def a():\n",
+        "    print(1)\n",
+        "    b()\n",
+        "    print(2)\n",
+        "def b():\n",
+        "    print(3)\n",
+        "a()"
+      ],
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "1\n",
+            "3\n",
+            "2\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pFRFrhGzHcNA",
+        "outputId": "66f5f9fa-8693-419d-cc20-364829b11821"
+      },
+      "source": [
+        "#15\n",
+        "def a():\n",
+        "    print(1)\n",
+        "    x = b()\n",
+        "    print(x)\n",
+        "    return 10\n",
+        "def b():\n",
+        "    print(3)\n",
+        "    return 5\n",
+        "y = a()\n",
+        "print(y)"
+      ],
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "1\n",
+            "3\n",
+            "5\n",
+            "10\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
